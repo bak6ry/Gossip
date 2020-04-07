@@ -1,0 +1,17 @@
+1. 首先要安装Import模块里的各种拓展包
+BeautifulSoup
+requests 
+os
+pymysql
+selenium 
+argparse
+re
+warnings
+urlparse
+pyExcelerator
+3.需要连接数据库，使用前请记得打开mysql数据库
+4. 使用时指定的参数 -h可以查看帮助
+-u USER指定连接数据库的用户名 -p PASSWORD 指定连接数据库的密码 -r 输入开始爬取的url(可以是多个，用空格分隔)  -k KEYWORDS 指定关键字(可以是多个，用空格分隔) -d DEPTH 指定要爬取得的深度(用阿拉伯数字表示等级，默认是1，数字越大深度越大，不限制深度，但是太大可能会爬很久)
+5. 该脚本是在py2.7环境下写的
+6.使用的时候请直接解压，phantomjs-2.1.1-windows文件夹必须和其它python文件在一个文件夹里
+7. 数据爬取结束后会在当前路径下生成output文件夹，用来存放输出的结果excel表
